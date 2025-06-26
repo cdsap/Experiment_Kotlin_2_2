@@ -1,0 +1,7 @@
+package com.awesomeapp.module_4_191
+
+data class Model191_19(
+    val id: String = "Model191_19-1750975607472",
+    val name: String = "Model for Model191_19",
+    val description: String = "Description for Model191_19"
+)

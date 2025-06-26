@@ -1,0 +1,7 @@
+package com.awesomeapp.module_3_172
+
+data class Model172_8(
+    val id: String = "Model172_8-1750975606079",
+    val name: String = "Model for Model172_8",
+    val description: String = "Description for Model172_8"
+)
