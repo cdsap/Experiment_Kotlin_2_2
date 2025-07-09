@@ -19,8 +19,8 @@ jobs:
                       ./memory_monitor.sh &
                       ./gradlew assembleDebug
             - store_artifacts:
-                  path: java_mem_monitor.log
-                  destination: java_mem_monitor.log
+                  path: build_process_watcher.log
+                  destination: build_process_watcher.log
 
 workflows:
     pr_build:
@@ -28,5 +28,5 @@ workflows:
             - build:
                   post-steps:
                       - store_artifacts:
-                            path: java_mem_monitor.log
-                            destination: java_mem_monitor.log
+                            path: build_process_watcher.log
+                            destination: build_process_watcher.log
