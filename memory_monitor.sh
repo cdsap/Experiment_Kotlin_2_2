@@ -10,9 +10,6 @@ PID_FILE="monitor.pid"
 # Store start time
 START_TIME=$(date +%s)
 
-# Trap graceful shutdown (SIGTERM, SIGINT)
-trap 'echo "💥 Monitor received termination signal. Running cleanup."; node dist/cleanup.js; exit' TERM INT
-trap 'echo "🧹 Monitor exiting normally. Running cleanup."; node dist/cleanup.js' EXIT
 
 # Create PID file
 echo $$ > "$PID_FILE"
