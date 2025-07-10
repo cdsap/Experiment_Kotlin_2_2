@@ -1,15 +1,17 @@
 plugins {
     `kotlin-dsl`
+    alias(libs.plugins.kotlin.jvm) apply false
+
 }
 
 dependencies {
     implementation(libs.kotlin.plugin)
     implementation(libs.kotlin.compose.plugin)
 
-    
+
                 implementation(libs.android.gradle.plugin)
                 implementation(libs.hilt.plugin)
-            
+
 }
 
 gradlePlugin {
