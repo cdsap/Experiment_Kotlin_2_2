@@ -37,15 +37,15 @@ class CompositeBuildPluginAndroidApp : Plugin<Project> {
                     }
                 }
                 compileOptions {
-                    sourceCompatibility = JavaVersion.VERSION_23
-                    targetCompatibility = JavaVersion.VERSION_23
+                    sourceCompatibility = JavaVersion.VERSION_21
+                    targetCompatibility = JavaVersion.VERSION_21
                 }
                 buildFeatures {
                     compose = true
                 }
             }
             target.extensions.getByType(KotlinAndroidProjectExtension::class.java).apply {
-                    jvmToolchain(23)
+                    jvmToolchain(21)
             }
 
 
